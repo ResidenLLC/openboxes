@@ -61,8 +61,8 @@ grails {
         // By default we enable email.  You can enable/disable email using environment settings below or in your
         // ${user.home}/openboxes-config.properties file
         enabled = false
-        from = "info@openboxes.com"
-        prefix = "[OpenBoxes]"
+        from = "inventory@residen.net"
+        prefix = "[Residen Inventory]"
         host = "localhost"
         port = "25"
 
