@@ -50,7 +50,9 @@ grails.project.dependency.resolution = {
          * reload4j until we move to a more modern Grails release.
          * https://reload4j.qos.ch/news.html https://www.slf4j.org/legacy.html
          */
-        compile "org.slf4j:slf4j-reload4j:1.7.33"
+        runtime 'net.sf.ehcache:ehcache-web:2.0.4'
+	runtime 'net.sf.barcode4j:barcode4j:2.1'
+	compile "org.slf4j:slf4j-reload4j:1.7.33"
         compile "ch.qos.reload4j:reload4j:1.2.18.2"
         // override hidden grails dependencies to work with reload4j
         build "org.slf4j:slf4j-api:1.7.33"
@@ -151,6 +153,8 @@ grails.project.dependency.resolution = {
         compile('org.jxls:jxls-poi:1.0.9') { exclude "jxls" }
     }
     plugins {
+
+        compile ":plugin-config:0.1.5"
 
         // Default plugins
         runtime(':tomcat:1.3.9')
